@@ -1,0 +1,65 @@
+@import 'tailwind.scss';
+@import 'colors.scss';
+
+.app-input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    height: 38px;
+    line-height: 18px;
+    padding: 0 15px;
+    outline: none;
+
+    &:focus {
+        border: 1px solid $success;
+    }
+
+    &-error {
+        border: 1px solid $error;
+    }
+}
+
+.error-text {
+    color: $error;;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px
+}
+
+.btn-plain-primary {
+    border: 1px solid $blue;
+    color: $blue;
+    &:hover {
+        color: #fff;
+        background-color: $blue
+    }
+}
+
+.btn-plain-error {
+    border: 1px solid $error;
+    color: $error;
+    &:hover {
+        color: #fff;
+        background-color: $error
+    }
+}
+
+.btn-plain-success {
+    border: 1px solid $success;
+    color: $success;
+    &:hover {
+        color: #fff;
+        background-color: $success
+    }
+}
+
+.btn-primary {
+    border: 1px solid $blue;
+    color: #fff;
+    background-color: $blue;
+    &:hover {
+        opacity: 0.9;
+    }
+}
